@@ -17,8 +17,10 @@ public double	getDimensionalWeight(){
 	return (getWidth() * getHeight() * getLength()) / getFactor();
 	}
 
-public double getWeight(){
-	return super.getWeight();
+@Override
+	public double getWeight() {
+		return Math.max((super.getWeight()), getDimensionalWeight());
+	}
 }
 
 
