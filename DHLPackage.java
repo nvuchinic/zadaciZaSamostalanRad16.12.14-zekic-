@@ -25,8 +25,5 @@ public class DHLPackage extends DimensionalWeightPackage {
 	 * override funkcije getWeight iz roditeljske klase. Ova implementacija vraca vecu od dvije velicine:
 	 * jedna je rezultat poziva metode getWeight roditeljske klase, a druga je rezultat poziva naslijedjene GetDimensionalWeight metode
 	 */
-	@Override
-	public double getWeight() {
-		return Math.max((super.getWeight()), getDimensionalWeight());
-	}
+	
 }
